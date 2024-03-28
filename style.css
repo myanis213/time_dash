@@ -21,6 +21,7 @@ body {
   grid-template-rows: repeat(2, 300px);
   gap: 20px;
 }
+
 /* 
 .container {
   display: grid;
@@ -36,19 +37,20 @@ body {
 }
 
 
-.image_container{
-    height: 20%;
-    overflow: hidden;
-     display: flex;
-     padding-right: 20px;
-     justify-content: end; 
+.image_container {
+  height: 20%;
+  overflow: hidden;
+  display: flex;
+  padding-right: 20px;
+  justify-content: end;
 }
 
-.image_container img{
-    width: auto;
-    height: 10vh;
-    margin-top: -10px;
+.image_container img {
+  width: auto;
+  height: 10vh;
+  margin-top: -10px;
 }
+
 .text-container {
   background-color: hsl(235, 46%, 20%);
   /* height:100% ; */
@@ -66,18 +68,23 @@ body {
 .card:nth-child(2) {
   background-color: hsl(15, 100%, 70%);
 }
+
 .card:nth-child(3) {
   background-color: hsl(195, 74%, 62%);
 }
+
 .card:nth-child(4) {
   background-color: hsl(348, 100%, 68%);
 }
+
 .card:nth-child(5) {
   background-color: hsl(145, 58%, 55%);
 }
+
 .card:nth-child(6) {
   background-color: hsl(264, 64%, 52%);
 }
+
 .card:nth-child(7) {
   background-color: hsl(43, 84%, 65%);
 }
@@ -115,22 +122,22 @@ body {
 }
 
 
-.date{
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap:  30px;
-    color: hsl(236, 100%, 87%);
-    font-size: 17px;
+.date {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: hsl(236, 100%, 87%);
+  font-size: 17px;
 
 }
 
 
-.date p:hover{
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    animation: scaleUp 0.3s ease-in-out; 
+.date p:hover {
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  animation: scaleUp 0.3s ease-in-out;
 }
 
 
@@ -138,27 +145,37 @@ body {
 
 
 
-.text_dots{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    font-size: 18px;
-    margin-bottom: 30px;
+.text_dots {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 
-.hours{
-    font-size: 68px;
-    font-weight: 300;
-    margin-bottom: 30px;
+.hours {
+  font-size: 68px;
+  font-weight: 300;
+  margin-bottom: 30px;
 }
 
-.desc{
-    font-size: 17px;
-    font-weight: 400;
-    color: hsl(236, 100%, 87%);
+.desc {
+  font-size: 17px;
+  font-weight: 400;
+  color: hsl(236, 100%, 87%);
 
 }
 
 
+@media screen and (max-width:300px) {
+  .container {
 
+    grid-template-columns: repeat(1, auto);
+   
+
+  }
+  body{
+    align-items: start;
+  }
+}
